@@ -24,7 +24,6 @@ function VideoModal({ onClose }: VideoModalProps) {
         backdropFilter: "blur(4px)",
       }}
     >
-      {}
       <div
         onClick={(e: MouseEvent<HTMLDivElement>) => e.stopPropagation()}
         style={{
@@ -35,7 +34,6 @@ function VideoModal({ onClose }: VideoModalProps) {
           border: "1px solid rgba(255,255,255,0.1)",
         }}
       >
-        {}
         <div
           style={{
             display: "flex",
@@ -71,7 +69,6 @@ function VideoModal({ onClose }: VideoModalProps) {
           </button>
         </div>
 
-        {}
         <div
           style={{
             background: "rgba(27,86,240,0.1)",
@@ -117,7 +114,6 @@ export function Hero() {
         background: "#0A1628",
       }}
     >
-      {}
       <div
         aria-hidden="true"
         style={{
@@ -130,7 +126,6 @@ export function Hero() {
         }}
       />
 
-      {}
       <div
         aria-hidden="true"
         style={{
@@ -141,7 +136,6 @@ export function Hero() {
         }}
       />
 
-      {}
       <div
         aria-hidden="true"
         style={{
@@ -169,7 +163,6 @@ export function Hero() {
         }}
       />
 
-      {}
       <div
         className="hero-grid"
         style={{
@@ -184,9 +177,7 @@ export function Hero() {
           alignItems: "center",
         }}
       >
-        {}
         <div>
-          {}
           <div
             style={{
               display: "inline-flex",
@@ -217,7 +208,6 @@ export function Hero() {
             </span>
           </div>
 
-          {}
           <h1
             style={{
               fontFamily: "'Plus Jakarta Sans', sans-serif",
@@ -242,7 +232,6 @@ export function Hero() {
             às melhores oportunidades
           </h1>
 
-          {}
           <p
             style={{
               fontFamily: "'Inter', sans-serif",
@@ -257,7 +246,6 @@ export function Hero() {
             uma rede inteligente de negócios e oportunidades.
           </p>
 
-          {}
           <ul
             aria-label="Vantagens"
             style={{
@@ -289,9 +277,7 @@ export function Hero() {
             ))}
           </ul>
 
-          {}
           <div style={{ display: "flex", gap: "14px", flexWrap: "wrap", alignItems: "center" }}>
-            {}
             <a
               href="#contato"
               style={{
@@ -321,7 +307,6 @@ export function Hero() {
               <ArrowRight size={16} aria-hidden="true" />
             </a>
 
-            {}
             <button
               onClick={() => setVideoOpen(true)}
               aria-label="Assistir à demonstração"
@@ -359,9 +344,7 @@ export function Hero() {
           </div>
         </div>
 
-        {}
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-          {}
           <div
             style={{
               background: "rgba(255,255,255,0.05)",
@@ -373,7 +356,6 @@ export function Hero() {
               overflow: "hidden",
             }}
           >
-            {}
             <div
               aria-hidden="true"
               style={{
@@ -400,7 +382,6 @@ export function Hero() {
               Resultados em números
             </p>
 
-            {}
             <dl
               style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "24px" }}
             >
@@ -433,7 +414,6 @@ export function Hero() {
             </dl>
           </div>
 
-          {}
           <div
             style={{
               background: "rgba(255,255,255,0.04)",
@@ -446,7 +426,6 @@ export function Hero() {
               gap: "16px",
             }}
           >
-            {}
             <div
               aria-hidden="true"
               style={{
@@ -497,10 +476,8 @@ export function Hero() {
         </div>
       </div>
 
-      {}
       {videoOpen && <VideoModal onClose={() => setVideoOpen(false)} />}
 
-      {}
       <style>{`
         @media (max-width: 1024px) {
           .hero-grid {

@@ -1,5 +1,3 @@
-
-
 import { useCountUp, useIntersectionOnce } from "../../hooks/hooks";
 import { STATS } from "../../constantes/constantes";
 import type { Stat } from "../../tipos/tipos";
@@ -15,7 +13,6 @@ function StatCard({ stat, isVisible }: StatCardProps) {
 
   return (
     <div style={{ textAlign: "center", padding: "40px 24px" }}>
-      {}
       <p
         aria-label={`${stat.prefix ?? ""}${stat.value.toLocaleString("pt-BR")}${stat.suffix} ${stat.label}`}
         style={{
@@ -33,7 +30,6 @@ function StatCard({ stat, isVisible }: StatCardProps) {
         {stat.suffix}
       </p>
 
-      {}
       <p
         style={{
           fontFamily: "'Plus Jakarta Sans', sans-serif",
@@ -46,7 +42,6 @@ function StatCard({ stat, isVisible }: StatCardProps) {
         {stat.label}
       </p>
 
-      {}
       <p
         style={{
           fontFamily: "'Inter', sans-serif",
@@ -76,7 +71,6 @@ export function Stats() {
         overflow: "hidden",
       }}
     >
-      {}
       <div
         aria-hidden="true"
         style={{
@@ -89,7 +83,6 @@ export function Stats() {
         }}
       />
 
-      {}
       <div
         aria-hidden="true"
         style={{
@@ -102,7 +95,6 @@ export function Stats() {
         }}
       />
 
-      {}
       <div style={{ maxWidth: "1100px", margin: "0 auto", position: "relative" }}>
         <div
           className="stats-grid"
@@ -110,7 +102,6 @@ export function Stats() {
         >
           {STATS.map((stat, index) => (
             <div key={stat.label} style={{ position: "relative" }}>
-              {}
               {index < STATS.length - 1 && (
                 <div
                   aria-hidden="true"

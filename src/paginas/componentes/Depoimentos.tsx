@@ -1,5 +1,3 @@
-
-
 import type { MouseEvent } from "react";
 import { Star, Quote } from "lucide-react";
 import { TESTIMONIALS } from "../../constantes/constantes";
@@ -33,14 +31,12 @@ function TestimonialCard({ testimonial: t }: TestimonialCardProps) {
         el.style.transform = "translateY(0)";
       }}
     >
-      {}
       <Quote
         aria-hidden="true"
         size={20}
         style={{ color: "rgba(27,86,240,0.4)", marginBottom: "16px" }}
       />
 
-      {}
       <div
         aria-label={`Avaliação: ${t.rating} de 5 estrelas`}
         style={{ display: "flex", gap: "3px", marginBottom: "16px" }}
@@ -50,7 +46,6 @@ function TestimonialCard({ testimonial: t }: TestimonialCardProps) {
         ))}
       </div>
 
-      {}
       <blockquote
         style={{
           fontFamily: "'Inter', sans-serif",
@@ -64,9 +59,7 @@ function TestimonialCard({ testimonial: t }: TestimonialCardProps) {
         "{t.text}"
       </blockquote>
 
-      {}
       <footer style={{ display: "flex", alignItems: "center", gap: "12px" }}>
-        {}
         <div
           aria-hidden="true"
           style={{
@@ -132,7 +125,6 @@ export function Testimonials() {
         overflow: "hidden",
       }}
     >
-      {}
       <div
         aria-hidden="true"
         style={{
@@ -148,7 +140,6 @@ export function Testimonials() {
       />
 
       <div style={{ maxWidth: "1200px", margin: "0 auto", position: "relative" }}>
-        {}
         <header style={{ textAlign: "center", marginBottom: "60px" }}>
           <SectionBadge
             label="Depoimentos"
@@ -186,7 +177,6 @@ export function Testimonials() {
           </p>
         </header>
 
-        {}
         <div
           className="testimonials-grid"
           style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: "20px" }}

@@ -1,5 +1,3 @@
-
-
 import type { ElementType, MouseEvent } from "react";
 import { Linkedin, Instagram, Youtube } from "lucide-react";
 import { FOOTER_LINK_GROUPS, FOOTER_CONTACT_ITEMS } from "../../constantes/constantes";
@@ -52,7 +50,6 @@ function SocialButton({ icon: Icon, label, href = "#" }: SocialButtonProps) {
 function BrandColumn() {
   return (
     <div>
-      {}
       <div style={{ display: "flex", alignItems: "center", gap: "10px", marginBottom: "16px" }}>
         <div
           style={{
@@ -83,8 +80,6 @@ function BrandColumn() {
           Redes<span style={{ color: "#F59E0B" }}>Obras</span>
         </span>
       </div>
-
-      {}
       <p
         style={{
           fontFamily: "'Inter', sans-serif",
@@ -96,8 +91,6 @@ function BrandColumn() {
       >
         A maior plataforma de networking e gestão de negócios para a construção civil brasileira.
       </p>
-
-      {}
       <address
         style={{
           display: "flex",
@@ -129,8 +122,6 @@ function BrandColumn() {
           );
         })}
       </address>
-
-      {}
       <nav aria-label="Redes sociais">
         <div style={{ display: "flex", gap: "10px" }}>
           <SocialButton icon={Linkedin} label="LinkedIn" />
@@ -147,7 +138,6 @@ export function Footer() {
 
   return (
     <footer style={{ background: "#060E1C", color: "white" }}>
-      {}
       <div style={{ maxWidth: "1200px", margin: "0 auto", padding: "72px 24px 48px" }}>
         <div
           className="footer-main"
@@ -159,8 +149,6 @@ export function Footer() {
           }}
         >
           <BrandColumn />
-
-          {}
           <nav
             aria-label="Links do rodapé"
             className="footer-links"
@@ -185,7 +173,7 @@ export function Footer() {
                   {links.map((link) => (
                     <li key={link}>
                       <a
-                        href={`/${link.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/\s+/g, "-")}`}
+                        href={`/${link.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/\s+/g, "-")}`}
                         style={{
                           fontFamily: "'Inter', sans-serif",
                           fontSize: "14px",
@@ -204,11 +192,7 @@ export function Footer() {
             ))}
           </nav>
         </div>
-
-        {}
         <hr style={{ height: "1px", background: "rgba(255,255,255,0.07)", border: "none", marginBottom: "28px" }} />
-
-        {}
         <div
           style={{
             display: "flex",
@@ -228,7 +212,6 @@ export function Footer() {
             © {currentYear} RedesObras. Todos os direitos reservados.
           </p>
 
-          {}
           <div
             aria-label="Status: todos os sistemas operacionais"
             style={{ display: "flex", gap: "6px", alignItems: "center" }}

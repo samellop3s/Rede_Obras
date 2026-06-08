@@ -1,5 +1,3 @@
-
-
 import type { MouseEvent } from "react";
 import { PARTNERS } from "../../constantes/constantes";
 
@@ -14,7 +12,6 @@ export function Partners() {
       }}
     >
       <div style={{ maxWidth: "1200px", margin: "0 auto" }}>
-        {}
         <p
           style={{
             fontFamily: "'Inter', sans-serif",
@@ -30,7 +27,6 @@ export function Partners() {
           Empresas que confiam na RedesObras
         </p>
 
-        {}
         <ul
           style={{
             listStyle: "none",

@@ -1,5 +1,3 @@
-
-
 import { UserPlus } from "lucide-react";
 import { STEPS, IMAGES } from "../../constantes/constantes";
 import type { Step } from "../../tipos/tipos";
@@ -22,9 +20,7 @@ function StepItem({ step, isLast }: StepItemProps) {
         marginBottom: isLast ? 0 : "32px",
       }}
     >
-      {}
       <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
-        {}
         <div
           aria-hidden="true"
           style={{
@@ -42,7 +38,6 @@ function StepItem({ step, isLast }: StepItemProps) {
           <Icon size={20} style={{ color: step.color }} />
         </div>
 
-        {}
         {!isLast && (
           <div
             aria-hidden="true"
@@ -57,7 +52,6 @@ function StepItem({ step, isLast }: StepItemProps) {
         )}
       </div>
 
-      {}
       <div style={{ paddingTop: "10px" }}>
         <p
           style={{
@@ -116,9 +110,7 @@ export function HowItWorks() {
             alignItems: "center",
           }}
         >
-          {}
           <div style={{ position: "relative" }}>
-            {}
             <div
               style={{
                 borderRadius: "20px",
@@ -135,7 +127,6 @@ export function HowItWorks() {
               />
             </div>
 
-            {}
             <div
               aria-label="Estatística: obras concluídas"
               className="how-it-works-stat-badge"
@@ -191,7 +182,6 @@ export function HowItWorks() {
               </div>
             </div>
 
-            {}
             <div
               aria-label="Notificação: nova empresa cadastrada"
               className="how-it-works-notif-badge"
@@ -244,7 +234,6 @@ export function HowItWorks() {
             </div>
           </div>
 
-          {}
           <div>
             <SectionBadge label="Como funciona" />
 
@@ -285,7 +274,6 @@ export function HowItWorks() {
               construção civil do Brasil.
             </p>
 
-            {}
             <ol aria-label="Passos do processo">
               {STEPS.map((step, index) => (
                 <StepItem

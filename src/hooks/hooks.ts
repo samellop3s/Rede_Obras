@@ -1,5 +1,3 @@
-
-
 import { useState, useEffect, useRef, type RefObject } from "react";
 
 export function useScrolled(threshold = 20): boolean {
@@ -19,7 +17,7 @@ export function useScrolled(threshold = 20): boolean {
 
 export function useIntersectionOnce<T extends Element>(
   threshold = 0.3
-): [React.RefObject<T>, boolean] {
+): [RefObject<T>, boolean] {
   const ref = useRef<T>(null);
   const [visible, setVisible] = useState(false);
 

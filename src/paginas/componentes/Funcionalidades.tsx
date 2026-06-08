@@ -1,5 +1,3 @@
-
-
 import type { MouseEvent } from "react";
 import { FEATURES } from "../../constantes/constantes";
 import type { Feature } from "../../tipos/tipos";
@@ -34,7 +32,6 @@ function FeatureCard({ feature }: FeatureCardProps) {
         el.style.borderColor = "rgba(0,0,0,0.06)";
       }}
     >
-      {}
       <div
         aria-hidden="true"
         style={{
@@ -135,7 +132,6 @@ export function Features() {
       style={{ padding: "100px 24px", background: "#F8FAFF" }}
     >
       <div style={{ maxWidth: "1200px", margin: "0 auto" }}>
-        {}
         <header style={{ textAlign: "center", marginBottom: "64px" }}>
           <SectionBadge label="Funcionalidades" />
 
@@ -179,7 +175,6 @@ export function Features() {
           </p>
         </header>
 
-        {}
         <div
           className="features-grid"
           style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: "24px" }}

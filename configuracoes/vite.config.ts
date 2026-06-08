@@ -41,6 +41,12 @@ export default defineConfig({
   plugins: [react(), tailwindcss(), serveIndexPlugin()],
   server: {
     allowedHosts: true,
+    proxy: {
+      '/api': {
+        target: 'http://localhost:8000',
+        changeOrigin: true,
+      },
+    },
   },
   // Set root to the workspace root (parent of configuracoes)
   root: path.resolve(__dirname, '..'),

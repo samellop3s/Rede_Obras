@@ -1,5 +1,3 @@
-
-
 import { useState, type ChangeEvent, type FocusEvent, type MouseEvent } from "react";
 import { ArrowRight, CheckCircle, AlertCircle } from "lucide-react";
 import { CTA_FORM_FIELDS, CTA_PERKS, IMAGES } from "../../constantes/constantes";

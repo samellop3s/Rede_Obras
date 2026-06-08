@@ -28,7 +28,9 @@ textarea {
   font-family: inherit;
 }
 
-input::placeholder {
+/* Placeholder branco apenas em seções com fundo escuro */
+[style*="background: rgba(255,255,255,0.06)"]::placeholder,
+[style*="rgba(255,255,255,0.06"]::placeholder {
   color: rgba(255, 255, 255, 0.3);
 }
 

@@ -1,5 +1,3 @@
-
-
 import { useState, type MouseEvent } from "react";
 import { Menu, X } from "lucide-react";
 import { useScrolled } from "../../hooks/hooks";
@@ -12,7 +10,6 @@ function Logo() {
       aria-label="Ir para o início"
       style={{ display: "flex", alignItems: "center", gap: "10px" }}
     >
-      {}
       <div
         style={{
           width: "38px",
@@ -32,7 +29,6 @@ function Logo() {
         </svg>
       </div>
 
-      {}
       <span
         style={{
           fontFamily: "'Plus Jakarta Sans', sans-serif",
@@ -70,7 +66,6 @@ export function Navbar() {
         borderBottom: scrolled ? "1px solid rgba(255,255,255,0.08)" : "1px solid transparent",
       }}
     >
-      {}
       <div style={{ maxWidth: "1200px", margin: "0 auto", padding: "0 24px" }}>
         <div
           style={{
@@ -82,7 +77,6 @@ export function Navbar() {
         >
           <Logo />
 
-          {}
           <div
             className="nav-desktop"
             style={{ display: "flex", alignItems: "center", gap: "36px" }}
@@ -106,12 +100,10 @@ export function Navbar() {
             ))}
           </div>
 
-          {}
           <div
             className="nav-desktop"
             style={{ display: "flex", alignItems: "center", gap: "12px" }}
           >
-            {}
             <a
               href="#contato"
               style={{
@@ -136,7 +128,6 @@ export function Navbar() {
               Entrar
             </a>
 
-            {}
             <a
               href="#contato"
               style={{
@@ -157,7 +148,6 @@ export function Navbar() {
             </a>
           </div>
 
-          {}
           <button
             className="nav-mobile-toggle"
             onClick={() => setMenuOpen((prev: boolean) => !prev)}
@@ -168,7 +158,7 @@ export function Navbar() {
               border: "none",
               color: "white",
               padding: "8px",
-              display: "none", 
+              display: "none",
             }}
           >
             {menuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -176,7 +166,6 @@ export function Navbar() {
         </div>
       </div>
 
-      {}
       {menuOpen && (
         <div
           className="nav-mobile-drawer"
@@ -240,4 +229,3 @@ export function Navbar() {
     </nav>
   );
 }
-
